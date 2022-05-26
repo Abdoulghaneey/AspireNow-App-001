@@ -1,0 +1,19 @@
+-----------------------------------------------------------------------
+	eShop - Auto Update Backend Help
+-----------------------------------------------------------------------
+
+If you are an existing customer and you have already got the eShop running on your server.
+Now when there is a new update exclusively released from our end, and if you want to install it on your server without disturbing your existing system. you can easily install that into your system by following these simple steps explained below :
+
+Step 1 : Download the new eShop code from codecanyon from your downloads section.
+
+Step 2 : Extract and Find the "update from v1.0 to v1.0.1.zip" file from the downloaded package.
+	You would see content of the package something like this
+		/code - vX.X
+		/documentation
+		/update from v1.0 to v1.0.1.zip	<-- Only Take this folder and upload it on your server
+		eshop.sql
+
+Step 3 : Open your admin panel and navigate to System > System Updater Page
+Step 4 : Drag & Drop or Choose this "update from v1.0 to v1.1.zip" file in the Upload area. 
+Step 5 : Click on "Update the System / Install the Plugin" button and Reload the page and your are done. You are now having the new update installed in your existing system.

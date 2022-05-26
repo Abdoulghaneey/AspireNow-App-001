@@ -1,0 +1,3 @@
+product id,category_id,tax,type,stock type,name,short_description,indicator,cod_allowed,minimum order quantity,quantity step size,total allowed quantity,is prices inclusive tax,is returnable,is cancelable,cancelable till,image,video_type,video,tags,warranty period,guarantee period,made in,sku,stock,availability,description,deliverable_type,deliverable_zipcodes,variant id,price,special price,sku,stock,availability
+35,98,,variable_product,2,NEW TEST seller,TEST 2,,1,12,,,,,,,uploads/media/2021/rin.jpg,,,,test,test,,,,,,1,,63,100,90,,,
+34,99,8,simple_product,1,NEW TEST 6,NEW TEST,,,,,,,,,,,,,,,,,,,,,2,"8,9,1",62,,,,,

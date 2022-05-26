@@ -1,0 +1,104 @@
+Instructions for bulk upload
+  * Data till column AA is for product rest for product variant(s)
+  * You can add more variants by repeating variants data in sequence for ex. in sample file first product have 1 variants and second product have 2 variants
+  * Atleast one variant is mandatory and for type simple_product only one variant is allowed
+  * You can keep fields blank which are optional
+-------------------------------------------------------------------
+products data
+-------------------------------------------------------------------
+1. category id - You can find from categories section - mandatory
+
+2. tax - You can find from products >> tax section - optional
+
+3. product type - It must be simple_product or variable_product - mandatory
+
+4. stock type -   If you don't want stock management leave it blank. else
+
+		Case 1 - if product type is simple_product it must be 0 (Stock will be managed product wise)
+
+		Case 2 - if product type is variable_product and you want to manage stock product wise stock type should be 1
+
+		Case 3 - if product type is variable_product and you want to manage stock variant wise stock type should be 2
+
+5. name - Name of the product - mandatory
+
+6. short description - Short descriotion about product - optional
+
+7. indicator - 0 -> none | 1 -> veg | 2 -> non-veg - optional
+
+8. cod allowed - 0 if COD not allowed  - 1 if COD allowed - optional (default will be 1)
+
+9. minimum order quantity - optional (default will be 1)
+
+10. quantity step size - optional (default will be 1)
+
+11. total allowed quantity - optional (Leave it blank if no such restrictions)
+
+12. is prices inclusive tax - 0 if prices are not inclusive tax  - 1 if prices are inclusive tax - optional (default will be 0)
+
+13. is returnable - 0 if product is not returnable  - 1 if product is returnable - optional (default will be 0)
+
+14. is cancelable - 0 if product is not cancelable  - 1 if product is cancelable - optional (default will be 0)
+
+15. cancelable till - It must be received, processed or shipped (case sensitive) if product is cancelable otherwise leave it blank
+
+16. image - You can copy relative path from media section - mandatory (for ex. uploads/media/2021/07.jpg)
+
+17. other images - You can copy relative path from media section. in case of multiple images paths must be separated with ,(comma) - optional (for ex. uploads/media/2021/07.jpg,uploads/media/2021/07.jpg)
+
+18. video type - It must be youtube or vimeo(case sensitive) - optional
+
+19. video - Video link - optional
+
+20. tags - It must be comma separated for ex. TV,AC,Cooler etc. - optional
+
+21. warranty period - For ex. 6 months - optional
+
+22. guarantee period - For ex. 1 year - optional
+
+23. made in - optional
+
+24. sku - set it if stock type is 0 or 1- optional
+
+25. stock - set it if stock type is 0 or 1 - optional
+
+26. availability - set it if stock type is 0 -> 0 - not available 1 - available - optional
+
+27. description - long description about product - optional
+
+28. deliverable_type -  add one of the following value as required to your product.
+                            "0" - for product is not ready to delivarable in zipcodes which are in Database.
+                            "1" - for product is delivarable in all zipcodes which are in Database.
+                            "2" - for product is delivarable in these included zipcodes which are in Database.
+                            "3" - for product is delivarable except this zipcodes which are in Database.
+
+29. deliverable_zipcodes - List as per the above option(Deliverable_Type) you selected. And it should be comma separated like 1,2,3
+
+30. seller_id - Set Seller ID
+
+
+-------------------------------------------------------------------
+variants data
+-------------------------------------------------------------------
+
+28. attribute value ids - You can find from products >> attribute values section. it must be in format 3,4,5 - optional
+
+29. price - Price of the product. it must be greater than special price - mandatory
+
+30. special price - Discounted price of the product. it must be smaller than price - optional - default will be 0 means no discounted price
+
+31. sku - set it if stock type is 2 - optional
+
+32. stock - set it if stock type is 2 - optional
+
+33. images - You can copy relative path from media section. in case of multiple images paths must be separated with ,(comma) - optional (for ex. uploads/media/2021/07.jpg,uploads/media/2021/07.jpg)
+
+34. availability - set it if stock type(depends on column 32.stock) is 2 -> 0 - not available 1 - available - optional
+
+
+
+
+
+
+
+

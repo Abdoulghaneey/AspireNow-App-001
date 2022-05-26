@@ -1,0 +1,100 @@
+Instructions for bulk update
+  * Data till column AA is for product rest for product variant(s)
+  * You can update more variants by repeating variants data in sequence for ex. in sample file first row have 1 variant and second product have no any variants
+  * You can keep fields blank if you don't want to change
+-------------------------------------------------------------------
+products data
+-------------------------------------------------------------------
+1. product id - ID of the product which you want to update. You can find from manage products section - mandatory
+
+2. category id - You can find from categories section
+
+3. tax - You can find from products >> tax section
+
+4. product type - It must be simple_product or variable_product
+
+5. stock type -   If you don't want stock management leave it blank. else
+
+		Case 1 - if product type is simple_product it must be 0 (Stock will be managed product wise)
+
+		Case 2 - if product type is variable_product and you want to manage stock product wise stock type should be 1
+
+		Case 3 - if product type is variable_product and you want to manage stock variant wise stock type should be 2
+
+6. name - Name of the product
+
+7. short description - Short descriotion about product
+
+8. indicator - 0 -> none | 1 -> veg | 2 -> non-veg
+
+9. cod allowed - 0 if COD not allowed  - 1 if COD allowed - (default will be 1)
+
+10. minimum order quantity - (default will be 1)
+
+11. quantity step size - (default will be 1)
+
+12. total allowed quantity
+
+13. is prices inclusive tax - 0 if prices are not inclusive tax  - 1 if prices are inclusive tax - (default will be 0)
+
+14. is returnable - 0 if product is not returnable  - 1 if product is returnable - (default will be 0)
+
+15. is cancelable - 0 if product is not cancelable  - 1 if product is cancelable - (default will be 0)
+
+16. cancelable till - It must be received, processed or shipped (case sensitive) if product is cancelable otherwise leave it blank
+
+17. image - You can copy relative path from media section - (for ex. uploads/media/2021/07.jpg)
+
+18. video type - It must be youtube or vimeo(case sensitive)
+
+19. video - Video link
+
+20. tags - It must be comma separated for ex. TV,AC,Cooler etc.
+
+21. warranty period - For ex. 6 months
+
+22. guarantee period - For ex. 1 year
+
+23. made in
+
+24. sku - set it if stock type is 0 or 1
+
+25. stock - set it if stock type is 0 or 1
+
+26. availability - set it if stock type is 0 -> 0 - not available 1 - available
+
+27. description - long description about product
+
+28. deliverable_type -  add one of the following value as required to your product.
+                            "0" - for product is not ready to delivarable in zipcodes which are in Database.
+                            "1" - for product is delivarable in all zipcodes which are in Database.
+                            "2" - for product is delivarable in these included zipcodes which are in Database.
+                            "3" - for product is delivarable except this zipcodes which are in Database.
+
+29. deliverable_zipcodes - List as per the above option(Deliverable_Type) you selected. And it should be comma separated like 1,2,3
+
+30. seller_id - Set Seller ID
+
+
+-------------------------------------------------------------------
+variants data
+-------------------------------------------------------------------
+28. variant id - ID of the product which you want to update. You can find from your database product variants table - mandatory
+
+29. price - Price of the product. it must be greater than special price
+
+30. special price - Discounted price of the product. it must be smaller than price - default will be 0 means no discounted price
+
+31. sku - set it if stock type is 2
+
+32. stock - set it if stock type is 2
+
+34. availability - set it if stock type is 2 -> 0 - not available 1 - available - optional
+
+
+
+
+
+
+
+

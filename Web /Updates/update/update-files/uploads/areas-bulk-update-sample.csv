@@ -1,0 +1,3 @@
+id,area_name,city_id,zipcode_id,minimum_free_delivery_order_amount,delivery_charges
+8,jalaram,59,18
+9,Sapu,58,17,5000,10

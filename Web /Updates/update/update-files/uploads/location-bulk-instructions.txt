@@ -1,0 +1,54 @@
+Instructions for bulk upload
+-------------------------------------------------------------------
+Zipcode data
+-------------------------------------------------------------------
+1. zipcode - zipcode value - mandatory
+
+-------------------------------------------------------------------
+City data
+-------------------------------------------------------------------
+1. city_name - city name - mandatory
+
+-------------------------------------------------------------------
+Areas data
+-------------------------------------------------------------------
+1. area_name - city name - mandatory
+2. city_id - You can find from Location->Cities section - mandatory
+3. zipcode_id - You can find from Location->Zipcodes section - mandatory
+4. minimum_free_delivery_order_amount - You can find from Location->Zipcodes section - optional
+5. delivery_charges - You can find from Location->Zipcodes section - optional
+
+
+Instructions for bulk update
+-------------------------------------------------------------------
+Zipcode data for udpate
+-------------------------------------------------------------------
+1. id - You can find from Location->Zipcodes section - mandatory
+2. zipcode - zipcode value - mandatory
+
+-------------------------------------------------------------------
+City data for update
+-------------------------------------------------------------------
+1. id - You can find from Location->Cities section - mandatory
+2. city_name - city name - mandatory
+
+-------------------------------------------------------------------
+Areas data for update
+-------------------------------------------------------------------
+1. id - You can find from Location->Areas section - mandatory
+2. area_name - city name - mandatory
+3. city_id - You can find from Location->Cities section - mandatory
+4. zipcode_id - You can find from Location->Zipcodes section - mandatory
+5. minimum_free_delivery_order_amount - You can find from Location->Zipcodes section - optional 
+6. delivery_charges - You can find from Location->Zipcodes section - optional
+
+
+
+
+
+
+
+
+
+
+
